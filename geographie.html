@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Géographie</title>
+
+        <link rel="stylesheet" href="geographie.css">
+        <script type="module" defer src="gameGeographie.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+            <h1>Maîtrisez toutes les capitales du monde sans faille !</h1>
+        </header>
+
+        <div class="container">
+
+            <main>
+
+                <div id="chronometre">
+                    <div class="cercle">
+                        <div class="aiguille-seconde"></div>
+                    </div>
+            
+                    <div id="timer">15s</div> <!-- L'affichage du texte -->
+                    
+                </div>
+                
+                <div class="sparkle-container"></div>
+                <div id="timer"></div>
+
+                <section id="questions">
+                    <!-- ici on rentrera les questions-->
+                </section>
+
+                <section id="messageResultat"></section>
+
+                <section id="reponses">
+                    <!-- ici on rentrera les options de réponses et le bouton valider puis suivant-->
+                </section>
+
+                <section>
+                    <button id="suivant" style="display: none;">SUIVANT</button>
+                    <!-- Le bouton suivant n'apparait pas tant que Valider n'est pas cliqué -->
+                    <button id="rejouer" style="display: none;">
+                        <a href="accueil.html">REJOUER</a>
+                    </button>
+                    <button id="valider">VALIDER</button>
+                
+                    <!-- Barre de progression sous le bouton Valider -->
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                        <div class="progress-text" id="progress-text">Question 1 sur X</div>
+                    </div>
+                </section>
+                
+
+            </aside>
+
+        </div>
+
+    </body>
+</html>
